@@ -119,7 +119,10 @@ namespace QuickstartIdentityServer
                     Claims = new List<Claim>
                     {
                         new Claim("name", "Alice"),
-                        new Claim("website", "https://alice.com")
+                        new Claim("website", "https://alice.com"),
+						new Claim(ClaimTypes.Role, "Admin")
+
+
                     }
                 },
                 new TestUser
@@ -131,9 +134,23 @@ namespace QuickstartIdentityServer
                     Claims = new List<Claim>
                     {
                         new Claim("name", "Bob"),
-                        new Claim("website", "https://bob.com")
+                        new Claim("website", "https://bob.com"),
+						new Claim(ClaimTypes.Role, "Validator")
                     }
-                }
+                },
+				new TestUser
+				{
+					SubjectId = "3",
+					Username = "manuel",
+					Password = "password",
+
+					Claims = new List<Claim>
+					{
+						new Claim("name", "Manuel"),
+						new Claim("website", "https://bob.com"),
+						new Claim(ClaimTypes.Role, "Manufacturer")
+					}
+				}
             };
         }
     }
