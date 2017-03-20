@@ -52,8 +52,8 @@ namespace Api
 
             app.UseIdentityServerAuthentication(new IdentityServerAuthenticationOptions
             {
-				Authority = "http://msf-identityserver.azurewebsites.net",
-				///Authority = "http://localhost:5000",
+				//Authority = "http://msf-identityserver.azurewebsites.net",
+				Authority = "http://localhost:5000",
 
 				RequireHttpsMetadata = false,
 

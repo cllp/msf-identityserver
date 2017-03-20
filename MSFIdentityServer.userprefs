@@ -1,19 +1,24 @@
 ﻿<Properties StartupConfiguration="{739A2271-F124-422E-821B-9815A82CB85D}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="MSFIdentityServer.userprefs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="msf-identityserver Status">
     <Files>
-      <File FileName="backup/project.json" Line="23" Column="23" />
-      <File FileName="Program.cs" Line="18" Column="19" />
-      <File FileName="Startup.cs" Line="42" Column="18" />
-      <File FileName="web.config" Line="1" Column="1" />
-      <File FileName="Config.cs" Line="101" Column="45" />
-      <File FileName="QuickstartIdentityServer.userprefs" Line="1" Column="1" />
-      <File FileName="MSFIdentityServer.userprefs" Line="1" Column="1" />
+      <File FileName="Startup.cs" Line="19" Column="1" />
+      <File FileName="Program.cs" Line="25" Column="10" />
+      <File FileName="Quickstart/SecurityHeadersAttribute.cs" Line="23" Column="28" />
+      <File FileName="Quickstart/TestUsers.cs" Line="34" Column="55" />
+      <File FileName="Quickstart/Home/ErrorViewModel.cs" Line="1" Column="1" />
+      <File FileName="Quickstart/Home/HomeController.cs" Line="1" Column="1" />
+      <File FileName="Quickstart/Consent/ConsentController.cs" Line="1" Column="1" />
+      <File FileName="Views/_ViewImports.cshtml" Line="1" Column="1" />
+      <File FileName="Config.cs" Line="27" Column="18" />
+      <File FileName="msf-identityserver Status" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.MSFIdentityServer PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/cllp/dev/msf-identityserver/Config.cs" relfile="Config.cs" line="100" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
