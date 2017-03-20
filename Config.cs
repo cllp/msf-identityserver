@@ -12,14 +12,10 @@ namespace QuickstartIdentityServer
     public class Config
     {
         // scopes define the resources in your system
-        public static IEnumerable<IdentityResource> GetIdentityResources()
-        {
-            return new List<IdentityResource>
-            {
-                new IdentityResources.OpenId(),
-                new IdentityResources.Profile(),
-            };
-        }
+        public static IEnumerable<IdentityResource> GetIdentityResources()         { 			var customProfile = new IdentityResource( 			name: "custom.profile", 			displayName: "Custom profile", 			//claimTypes: new[] { "name", "email", "role" });
+			claimTypes: new[] { "email", "role" });              return new List<IdentityResource>             {
+				new IdentityResources.OpenId(),
+				new IdentityResources.Profile(), 				customProfile             };         } 
 
         public static IEnumerable<ApiResource> GetApiResources()
         {
@@ -35,7 +31,7 @@ namespace QuickstartIdentityServer
             // client credentials client
             return new List<Client>
             {
-                new Client
+                /*new Client
                 {
                     ClientId = "client",
                     AllowedGrantTypes = GrantTypes.ClientCredentials,
@@ -82,7 +78,8 @@ namespace QuickstartIdentityServer
                         "api1"
                     },
                     AllowOfflineAccess = true
-                },
+                },*/
+
 
                 // JavaScript Client
                 new Client
@@ -98,9 +95,11 @@ namespace QuickstartIdentityServer
 
                     AllowedScopes =
                     {
+						
                         IdentityServerConstants.StandardScopes.OpenId,
                         IdentityServerConstants.StandardScopes.Profile,
-                        "api1"
+                        "api1",
+						"custom.profile"
                     },
                 }
             };
@@ -120,9 +119,8 @@ namespace QuickstartIdentityServer
                     {
                         new Claim("name", "Alice"),
                         new Claim("website", "https://alice.com"),
-						new Claim(ClaimTypes.Role, "Admin")
-
-
+						new Claim("email", "email@alice.com"),
+						new Claim("role", "admin")
                     }
                 },
                 new TestUser
@@ -135,7 +133,8 @@ namespace QuickstartIdentityServer
                     {
                         new Claim("name", "Bob"),
                         new Claim("website", "https://bob.com"),
-						new Claim(ClaimTypes.Role, "Validator")
+						new Claim("email", "email@bob.com"),
+						new Claim("role", "validator")
                     }
                 },
 				new TestUser
@@ -148,7 +147,8 @@ namespace QuickstartIdentityServer
 					{
 						new Claim("name", "Manuel"),
 						new Claim("website", "https://bob.com"),
-						new Claim(ClaimTypes.Role, "Manufacturer")
+						new Claim("email", "email@manuel.com"),
+						new Claim("role", "manufacturer")
 					}
 				}
             };
