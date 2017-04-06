@@ -1,9 +1,0 @@
-/Users/cllp/dev/msf-identityserver/bin/Debug/netcoreapp1.1/QuickstartIdentityServer.deps.json
-/Users/cllp/dev/msf-identityserver/bin/Debug/netcoreapp1.1/QuickstartIdentityServer.runtimeconfig.json
-/Users/cllp/dev/msf-identityserver/bin/Debug/netcoreapp1.1/QuickstartIdentityServer.runtimeconfig.dev.json
-/Users/cllp/dev/msf-identityserver/obj/Debug/netcoreapp1.1/MSFIdentityServer.csprojResolveAssemblyReference.cache
-/Users/cllp/dev/msf-identityserver/obj/Debug/netcoreapp1.1/MSFIdentityServer.AssemblyInfo.cs
-/Users/cllp/dev/msf-identityserver/bin/Debug/netcoreapp1.1/QuickstartIdentityServer.dll
-/Users/cllp/dev/msf-identityserver/bin/Debug/netcoreapp1.1/QuickstartIdentityServer.pdb
-/Users/cllp/dev/msf-identityserver/obj/Debug/netcoreapp1.1/QuickstartIdentityServer.dll
-/Users/cllp/dev/msf-identityserver/obj/Debug/netcoreapp1.1/QuickstartIdentityServer.pdb
